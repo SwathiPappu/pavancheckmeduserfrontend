@@ -7,7 +7,6 @@ import ReportsPage from "./components/ReportsPage";
 import "./App.css";
 import axios from "axios";
 
-
 function App() {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [userData, setUserData] = useState(null);
