@@ -73,7 +73,7 @@ const UserDetails = ({
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/user/update",
+        "https://pavancheckmedbackend-2.onrender.com/api/user/update",
         {
           phoneNumber,
           patientName,

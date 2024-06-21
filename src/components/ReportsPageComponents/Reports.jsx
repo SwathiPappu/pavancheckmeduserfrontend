@@ -84,7 +84,7 @@ const Reports = ({ phoneNumber, userData, patientName, bookingId, selectedPackag
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/users`)
+      .get(`https://pavancheckmedbackend-2.onrender.com/api/users`)
       .then((response) => {})
       .catch((error) => {
         console.error("There was an error fetching the dashboard data!", error);
@@ -93,7 +93,7 @@ const Reports = ({ phoneNumber, userData, patientName, bookingId, selectedPackag
   const handleCollectSample = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/users/${userId}`,
+        `https://pavancheckmedbackend-2.onrender.com/api/users/${userId}`,
         {
           method: "PUT",
           headers: {

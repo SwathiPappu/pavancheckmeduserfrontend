@@ -15,7 +15,7 @@ function App() {
   const handlePhoneNumberSubmit = async (number) => {
     setPhoneNumber(number);
     try {
-      const response = await axios.post("http://localhost:5000/api/user", {
+      const response = await axios.post("https://pavancheckmedbackend-2.onrender.com/api/user", {
         phoneNumber: number,
       });
       setUserData(response.data);

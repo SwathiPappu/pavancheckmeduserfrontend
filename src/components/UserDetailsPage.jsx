@@ -12,7 +12,7 @@ const UserDetailsPage = ({ phoneNumber, userData }) => {
   useEffect(() => {
     const fetchPackages = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/packages', {
+        const response = await axios.get('https://pavancheckmedbackend-2.onrender.com/api/packages', {
           params: { city, companyName }
         });
         setPackages(response.data);
