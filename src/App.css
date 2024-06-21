@@ -1,0 +1,16 @@
+/* *{
+  font-family: 'Times New Roman', Times, serif !important;
+} */
+.input-container {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5; /* slight gray background */
+  padding: 5px;
+  border-radius: 5px;
+  width: fit-content; /* Adjust width as needed */
+}
+
+.prefix {
+  margin-right: 10px; /* Adjust spacing between prefix and input */
+  color: #999; /* Gray color for prefix */
+}
