@@ -2,18 +2,11 @@
   "routes": [
     {
       "route": "/home-page/*",
-      "serve": "/index.html",
-      "statusCode": 200
+      "rewrite": "/index.html"
     },
     {
       "route": "/user-details/*",
-      "serve": "/index.html",
-      "statusCode": 200
-    },
-    {
-      "route": "/reports",
-      "serve": "/index.html",
-      "statusCode": 200
+      "rewrite": "/index.html"
     }
   ]
 }

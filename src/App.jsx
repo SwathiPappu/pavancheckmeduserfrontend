@@ -4,13 +4,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import UserDetailsPage from "./components/UserDetailsPage";
 import ReportsPage from "./components/ReportsPage";
+import { useNavigate } from "react-router-dom";
 import "./App.css";
 import axios from "axios";
 
 function App() {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [userData, setUserData] = useState(null);
-
+  const navigate = useNavigate();
   const handlePhoneNumberSubmit = async (number) => {
     setPhoneNumber(number);
     try {
@@ -44,6 +45,7 @@ function App() {
           path="/reports"
           element={<ReportsPage phoneNumber={phoneNumber} userData={userData} />}
         />
+        <Route path="*" element={<navigate to="/home-page/chennai/Casio" />} /> 
       </Routes>
     </Router>
   );
